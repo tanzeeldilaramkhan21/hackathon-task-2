@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: aquamarine;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color:grey ;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase   ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Palindrome Checker</h1>
+    <form id="palindrome-form">
+        <label for="word"><b>Enter a word:</b></label>
+        <input type="text" id="word" name="word" required />
+        <button id="check-palindrome">Check</button>
+    </form>
+    <div id="result" class="result"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
